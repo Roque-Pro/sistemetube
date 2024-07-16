@@ -36,6 +36,10 @@ Clique em "Baixar" para iniciar o download.
 Estrutura do Projeto
 arduino
 Copiar código
+
+
+
+
 meu_projeto/
 │
 ├── static/
@@ -48,6 +52,12 @@ meu_projeto/
 ├── app.py
 ├── requirements.txt
 └── README.md
+
+
+
+
+
+
 static/: Contém arquivos estáticos como CSS.
 templates/: Contém templates HTML para renderizar as páginas.
 app.py: O arquivo principal que define a aplicação Flask e suas rotas.
