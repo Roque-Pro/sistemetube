@@ -1,42 +1,9 @@
-Flask Video Downloader
-Este é um aplicativo web simples desenvolvido com Flask para baixar vídeos do YouTube.
-
-Funcionalidades
-Download de Vídeos: Permite ao usuário inserir um URL do YouTube e escolher a qualidade para baixar o vídeo.
-Formatos de Download: Suporta download de vídeo em várias qualidades e também permite baixar apenas o áudio em formato MP3.
-Interface Simples: Utiliza HTML, CSS e JavaScript para criar uma interface amigável.
-Pré-requisitos
-Python 3.7 ou superior
-Flask
-youtube-dl
-Instalação
-Clone o repositório:
-
-bash
-Copiar código
-git clone https://github.com/seu-usuario/flask-video-downloader.git
-cd flask-video-downloader
-Instale as dependências:
-
-bash
-Copiar código
-pip install -r requirements.txt
-Uso
-Inicie o servidor Flask:
-
-bash
-Copiar código
-python app.py
-Abra seu navegador e acesse http://localhost:5000.
-
-Cole o URL do vídeo do YouTube na caixa de entrada e escolha a qualidade desejada.
-
-Clique em "Baixar" para iniciar o download.
+Descrição
+Este projeto é uma aplicação web para download de vídeos do YouTube com opções de qualidade selecionáveis.
 
 Estrutura do Projeto
 arduino
 Copiar código
-
 
 
 
@@ -50,20 +17,26 @@ meu_projeto/
 │   ├── success.html
 │
 ├── app.py
-├── requirements.txt
-└── README.md
 
 
 
-
-
-
-static/: Contém arquivos estáticos como CSS.
-templates/: Contém templates HTML para renderizar as páginas.
-app.py: O arquivo principal que define a aplicação Flask e suas rotas.
-requirements.txt: Lista de dependências Python.
-Contribuindo
-Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests para melhorias ou correções de bugs.
-
-Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+Pré-requisitos
+Python 3.x instalado
+Flask framework instalado (pip install Flask)
+Biblioteca youtube_dl instalada (pip install youtube_dl)
+Como Executar
+Clone o repositório para sua máquina local.
+Navegue até o diretório do projeto.
+Execute o seguinte comando para iniciar o servidor Flask:
+Copiar código
+python app.py
+Abra um navegador web e vá para http://localhost:5000.
+Como Utilizar
+Na página inicial, cole o link do vídeo do YouTube desejado.
+Selecione a qualidade de vídeo desejada utilizando os checkboxes fornecidos.
+Clique no botão "Baixar".
+Após o download, você será redirecionado para a página de sucesso onde poderá ver uma mensagem indicando que o vídeo foi baixado com sucesso.
+Notas Adicionais
+Este projeto utiliza Flask para o backend e HTML/CSS para o frontend básico.
+Certifique-se de ter uma conexão com a internet estável ao baixar vídeos do YouTube.
+Este projeto não deve ser usado para baixar conteúdo protegido por direitos autorais sem permissão.
