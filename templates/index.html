@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download YouTube Video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1><b> Sisteme</b><b><font color="#ef5345">Tube</font></h1>
+            <div id="subtitulo">
+                <h5>Downloads sem limites</h5>
+            </div>
+            <form action="/download" method="post">
+            <label for="url" >YouTube URL:</label>
+            <input placeholder="https:youtube.link" type="url" id="url" name="url" required>
+            <h5>Selecione a qualidade do download</h5>
+            <div class="radio-group">
+                <label><input type="radio" name="quality" value="best" required> <b>HD - </b>Qualidade Alta</label><br><br>
+             
+                <label><input type="radio" name="quality" value="high"> <b>Ótimo - </b>Qualidade Boa</label><br>
+                <br>
+                <label><input type="radio" name="quality" value="medium"> <b>Bom - </b>Qualidade Razoável</label><br>
+                <br>
+                <label><input type="radio" name="quality" value="low"> <b>Ruim - </b>Qualidade Baixa</label><br>
+                <br>
+                <hr style="margin-bottom: 20px;">    
+                <label><input style="margin-bottom: 50px;" type="radio" name="quality" value="audio"> <b>MP3 - </b>Somente Áudio</label>
+            </div>
+
+            <input type="submit" value="Download">
+        </form>
+    </div>
+</body>
+</html>
